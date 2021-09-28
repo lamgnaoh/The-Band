@@ -21,8 +21,18 @@ html{
 #header{
     height: 46.5px;
     background-color: black;
+    /* giup dinh header vao phia tren cua so trinh duyet */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    
 }
 
+#nav{
+    /* do the div co thuoc tinh block nen se chiem het chieu dai cua header nen se day the div button search xuong duoi -> can chuyen ve inline-block */
+    display:inline-block;
+}
 
 #nav li {
     display:inline-block;
@@ -47,6 +57,12 @@ html{
     color: #000;
     background-color: #ccc;
 }
+#nav .nav-arrow-down{
+    font-size: 14px;
+    position: absolute;
+    top: 14px;
+    right: 12px;
+}
 #nav .subnav{
     display: none;
     position: absolute;
@@ -68,8 +84,21 @@ html{
     background-color: #ccc; 
 }
 
+#header .search-btn{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    line-height: 46.5px;
+    padding: 0 23px;
+    
+}
+#header .search-btn:hover{
+    color: white;
+    background-color:rgb(169, 20, 9) ;
+    cursor: pointer;
+}
 #slider{
-
+    margin-top: 46.5px;
 }
 
 #content{
