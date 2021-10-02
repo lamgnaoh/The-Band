@@ -26,6 +26,10 @@ html{
 .clear{
     clear: both;
 }
+.text-white{
+    color: #fff !important;
+}
+
 #header{
     height: 46.5px;
     background-color: black;
@@ -140,6 +144,7 @@ html{
     margin-left: auto;
     margin-right: auto ;
     padding: 64px 0;
+    
 }
 #content .section-heading{
     text-align: center;
@@ -180,6 +185,93 @@ html{
 #content .member-image{
     width: 154px;
     border-radius: 4px;
+}
+#content .tour-section{
+    background-color: black;
+}
+
+#content .tour-ticket{
+    margin-top: 30px;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid rgb(168, 159, 145);
+    
+
+}
+#content .tour-ticket li{
+    font-size: 15px;
+    color: rgb(168, 159, 145);
+    padding: 8px 16px;
+    border-bottom: 1px solid rgb(168, 159, 145)
+}
+#content .tour-ticket .sold-out{
+    background-color: rgb(180, 16, 4);
+    margin-left: 10px;
+    color: #fff;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+#content .tour-ticket .number-ticket{
+    float: right;
+    background-color: black;
+    border-radius: 50%;
+    /* margin-top: 0px; */
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    color: white
+}
+/* tour place css */
+#content   .place-list{
+    margin-top:32px;
+    /* căn cho hai cạnh item va ticket bằng nhau  */
+    margin-left:-8px;
+    margin-right: -8px;
+}
+#content   .place-item{
+    float:left;
+    width: calc(100%/3);
+    padding:0px 8px;
+}
+#content .place-img{
+    width: 100%;
+    display: block;
+}
+#content .place-img:hover{
+    opacity: 0.6;
+}
+#content   .place-body{
+    background-color: #fff;
+    font-size: 15px;
+    padding:16px 16px;
+}
+#content   .place-heading{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+#content   .place-time{
+    color: rgb(181, 172, 160);
+    margin:15px 0px;
+}
+#content   .place-description{
+    margin: 15px 0;
+}
+#content   .place-buy-btn{
+    color: #fff;
+    width: 108px;
+    height: 38px;
+    background-color: #000;
+    border: none;
+    font-size: 15px;
+    /* margin-bottom: 16px; */
+}
+#content   .place-buy-btn:hover{
+    background-color:rgb(52, 56, 59) ;
+    color: #fff;
+    cursor: pointer;
 }
 #content{
 
