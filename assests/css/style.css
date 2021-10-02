@@ -273,6 +273,86 @@ html{
     color: #fff;
     cursor: pointer;
 }
+/* buy ticket modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal .modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+}
+.modal .modal-close-btn{
+    float: right;
+    width: 46px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    cursor: pointer;
+}
+.modal .modal-close-btn:hover{
+    background-color: rgb(52, 56, 59);
+}
+.modal .modal-header{
+    background-color: rgb(0, 126, 114);
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    padding:42px 16px;
+}
+.modal .modal-icon{
+    margin-right: 10px;
+}
+
+.modal .modal-content{
+    padding: 16px;
+}
+.modal .content-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.modal .modal-input{
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(62, 69, 71);
+    padding: 8px;
+    margin-bottom: 15px;
+
+}
+.modal .modal-pay-btn{
+    background-color:rgb(0, 126, 114) ;
+    width: 100%;
+    border: none;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+}
+.modal .modal-pay-btn:hover{
+    background-color: rgb(52, 56, 59);
+    cursor: pointer;
+}
+.modal .modal-footer{
+    font-size: 15px;
+    padding: 16px;
+    text-align: right;
+
+}
+.modal .modal-footer a{
+    color: rgb(50, 172, 255);
+}
 #content{
 
 }
