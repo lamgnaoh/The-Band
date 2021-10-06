@@ -57,7 +57,7 @@
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-subheading">We love music</p>
                 <p class="section-description">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="member-list">
+                <div class=" member-list">
                     <div class="member-item">
                         <p class="member-name">Name</p>
                         <img src="/assests/img/bandmember.jpg" alt="Name" class="member-image">
@@ -86,31 +86,34 @@
                         <li>November <span class="number-ticket">3</span></li>
                     </ul>
                     <!-- place -->
-                    <div class="place-list">
-                        <div class="place-item">
+                    <div class="row place-list">
+                        <!-- div class = "place-item" -->
+                        <div class="col col-3">
                             <img src="/assests/img/newyork.jpg" alt="img1" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button type = "button"class="place-buy-btn">Buy Tickets</button>
+                                <button type = "button" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <!-- div class = "place-item" -->
+                        <div class="col col-3">
                             <img src="/assests/img/paris.jpg" alt="img1" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button type = "button"class="place-buy-btn">Buy Tickets</button>
+                                <button type = "button "class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
-                        </div><div class="place-item">
+                        <!-- div class = "place-item" -->
+                        </div><div class="col col-3">
                             <img src="/assests/img/sanfran.jpg" alt="img1" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button type = "button"class="place-buy-btn">Buy Tickets</button>
+                                <button type = "button" class="place-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -121,6 +124,7 @@
             <div class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-subheading">Fan? Drop a note!</p>
+                
             </div>
         </div>
         <!-- footer -->
@@ -129,9 +133,9 @@
         </div>
         
     </div>
-    <div class="modal">
-        <div class="modal-container">        
-            <div class="modal-close-btn">
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">        
+            <div class="modal-close-btn js-modal-close">
                 <i class="fas fa-times"></i>
             </div>
             <header class="modal-header">
@@ -153,4 +157,33 @@
             <footer class="modal-footer">Need <a href="">help?</a></footer>
         </div>
     </div>
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket');
+        const modal = document.querySelector('.js-modal');
+        const modalCLoseBtn = document.querySelector('.js-modal-close');
+        const modalContainer = document.querySelector('.js-modal-container');
+        // ham hien thi modal mua ve 
+        function showBuyModal(){
+            // alert("SHOW");
+            modal.classList.add('open');
+        }
+        // ham dong modal mua ve 
+        function hideBuyModal(){
+            modal.classList.remove('open');
+        }
+        // lap qua tung the button
+        for(const buyBtn of buyBtns){
+            //lang nghe su kien click cua button buy ticket  . khi co su  kien click thi goi ham showBuyModal
+            buyBtn.addEventListener('click',showBuyModal);
+        }
+        //lang nghe su kien click cua button close modal . khi co su  kien click thi goi ham hideBuyModal
+        modalCLoseBtn.addEventListener('click',hideBuyModal);
+
+        modal.addEventListener('click',hideBuyModal);
+
+        modalContainer.addEventListener('click',function (event){
+            // dừng sự kiện nổi bọt của thẻ modal-container 
+            event.stopPropagation();
+        })
+    </script>
 </body> 

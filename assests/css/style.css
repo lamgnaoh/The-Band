@@ -19,15 +19,36 @@ html{
     2. Kích thước 
     3. Màu sắc 
     4. Kiểu dáng 
-*/
-#main{
+    */
 
-}
+/* Common */
 .clear{
-    clear: both;
+        clear: both;
 }
 .text-white{
-    color: #fff !important;
+        color: #fff !important;
+}
+        /* tư duy row column */
+.row{
+    margin-left:-8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding:0px 8px;
+    
+}
+        /* chia lam 3 cot  */
+.col-3{
+    width: calc(100%/3);
+}
+        /* chia lam 2 cot */
+.col-2{
+    width: calc(100%/2);
+}
+/* main */
+#main{
+
 }
 
 #header{
@@ -40,7 +61,6 @@ html{
     left: 0;
     /* nổi phần header lên bên layer bên trên  */
     z-index: 1;
-    
 }
 
 #nav{
@@ -227,13 +247,14 @@ html{
 #content   .place-list{
     margin-top:32px;
     /* căn cho hai cạnh item va ticket bằng nhau  */
-    margin-left:-8px;
-    margin-right: -8px;
+
+    /* margin-left:-8px;
+    margin-right: -8px; */
 }
 #content   .place-item{
-    float:left;
-    width: calc(100%/3);
-    padding:0px 8px;
+    /* float:left; */
+    /* width: calc(100%/3); */
+    /* padding:0px 8px; */
 }
 #content .place-img{
     width: 100%;
@@ -282,15 +303,19 @@ html{
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 2;
-    display: flex;
+    display: none;  
     align-items: center;
     justify-content: center;
+}
+.modal.open{
+    display: flex;
 }
 .modal .modal-container{
     background-color: #fff;
     width: 900px;
     max-width: calc(100%-32px);
     min-height: 200px;
+    animation: showModal ease 0.4s;
 }
 .modal .modal-close-btn{
     float: right;
@@ -307,8 +332,8 @@ html{
     background-color: rgb(0, 126, 114);
     text-align: center;
     font-size: 30px;
-    letter-spacing: 4px;
     font-weight: 400;
+    letter-spacing: 4px;
     padding:42px 16px;
 }
 .modal .modal-icon{
@@ -352,6 +377,16 @@ html{
 }
 .modal .modal-footer a{
     color: rgb(50, 172, 255);
+}
+@keyframes showModal {
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 #content{
 
