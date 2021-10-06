@@ -61,6 +61,20 @@ html{
     margin-top:16px;
 }
 
+.btn{
+    color: #fff;
+    width: 108px;
+    height: 38px;
+    background-color: #000;
+    border: none;
+    font-size: 15px;
+    /* margin-bottom: 16px; */
+}
+.btn:hover{
+    background-color:rgb(52, 56, 59) ;
+    color: #fff;
+    cursor: pointer;
+}
 /* main */
 #main{
 
@@ -178,7 +192,7 @@ html{
     width: 800px;
     margin-left: auto;
     margin-right: auto ;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     
 }
 #content .section-heading{
@@ -302,6 +316,7 @@ html{
     background-color: #000;
     border: none;
     font-size: 15px;
+    cursor: pointer;
     /* margin-bottom: 16px; */
 }
 #content   .place-buy-btn:hover{
@@ -427,9 +442,29 @@ html{
     padding:11px 15px;
     float: right;
 }
+/* map section */
+#content .map-section{
+    width: 100%;
+}
+
 #content{
 
 }
+
 #footer{
-    
+    padding:64px 16px;
+    text-align: center;  
+
+}
+#footer .social i{
+   color: rgb(249, 247, 244) !important;
+   font-size: 24px;
+   text-decoration: none;
+}
+#footer .copyright{
+    padding: 15px 0;
+    font-size: 15px;
+}
+#footer .copyright a{
+    color:rgb(249, 247, 244) !important;
 }
