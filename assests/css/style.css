@@ -38,6 +38,11 @@ html{
     padding:0px 8px;
     
 }
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
         /* chia lam 3 cot  */
 .col-3{
     width: calc(100%/3);
@@ -46,6 +51,16 @@ html{
 .col-2{
     width: calc(100%/2);
 }
+.col-1{
+    width: 100%;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top:16px;
+}
+
 /* main */
 #main{
 
@@ -387,6 +402,30 @@ html{
         transform: translateY(0);
         opacity: 1;
     }
+}
+/* contact-section */
+#content .contact-section{
+    margin-top: 48px;
+}
+#content .contact-info{
+    font-size: 18px;
+
+}
+#content .contact-info i{
+    width: 30px;
+}
+#content .contact-form .form-control{
+    padding:8px;
+    border:1px solid #ccc;
+    width:100%;
+}
+#content .contact-form .form-submit-btn{
+    border:none;
+    background-color: #000;
+    color: rgb(249, 247, 244);
+    font-size: 15px;
+    padding:11px 15px;
+    float: right;
 }
 #content{
 
