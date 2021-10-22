@@ -12,6 +12,12 @@
 }
 /* Mobile */
 @media screen and (max-width:739px) {
+    .btn{
+        width:100%
+    }
+    .c-mt-8{
+        margin-top: 8px !important;
+    }
     .c-12{
         width: 100%;
     }
@@ -48,4 +54,8 @@
     #content .member-image{
         width: 60%;
     }
+    #content .contact-info{
+        margin-bottom: 16px;
+    }
+    
 }

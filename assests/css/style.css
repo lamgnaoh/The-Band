@@ -69,6 +69,7 @@ html{
     background-color: #000;
     border: none;
     font-size: 15px;
+    /* width:100%; */
     /* margin-bottom: 16px; */
 }
 .btn:hover{
@@ -448,7 +449,6 @@ html{
 }
 #content .contact-info{
     font-size: 18px;
-
 }
 #content .contact-info i{
     width: 30px;
