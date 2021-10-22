@@ -71,6 +71,8 @@ html{
     font-size: 15px;
     /* width:100%; */
     /* margin-bottom: 16px; */
+    -webkit-appearance: none;
+    
 }
 .btn:hover{
     background-color:rgb(52, 56, 59) ;
@@ -188,7 +190,7 @@ html{
     position: relative;
     margin-top: 46.5px;
     padding-top: 50%;
-    background-image: url("/assests/img/chicago.jpg");
+    background-image: url("../img/chicago.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -209,7 +211,7 @@ html{
 }
 #slider .text-description{
     font-weight: bolder;
-    
+    text-shadow: 0 0 1px #000;
 }
 #content .content-section{
     max-width: 100%;

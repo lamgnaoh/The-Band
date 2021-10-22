@@ -9,6 +9,12 @@
     #header .mobile-menu-btn{
         display: none;
     }
+    .social{
+        font-size: 48px;
+    }
+    .social a{
+        margin: 0 8px;
+    }
 }
 /* Mobile */
 @media screen and (max-width:739px) {
@@ -57,5 +63,10 @@
     #content .contact-info{
         margin-bottom: 16px;
     }
-    
+    .social{
+        font-size: 48px;
+    }
+    .social a{
+        margin: 0 8px;
+    }
 }
